@@ -13,7 +13,7 @@ def main():
         node.get_logger().info('待機中')
     
     req = Query.Request()
-    req.name = "木村秋仁"
+    req.name = "name"
     future = client.call_async(req)
     
     while rclpy.ok():

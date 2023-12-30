@@ -7,7 +7,7 @@ from person_msgs.srv import Query
 
 
 def cb(request, response):
-    if request.name == "木村秋仁":
+    if request.name == "name":
         response.age = 20
     else:
         response.age = 255
