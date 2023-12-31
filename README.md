@@ -59,10 +59,10 @@ $ ros2 launch mypkg talk_listen.launch.py
 # 必要なソフトウェア
 Python
 
+ROS2 Foxy Fitzroy
+
 # テスト環境
 Ubuntu 20.04 on Windows
-
-ROS2 Foxy Fitzroy
 
 テストの際に以下のコンテナを使用しています
 * [ryuichiueda/ubuntu22.04-ros2](https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2)
