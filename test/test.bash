@@ -18,9 +18,6 @@ python3 $dir/ros2_ws/src/mypkg/mypkg/listener.py
 
 listener_exit_code=$?
 
-ros2 node kill /talker
-ros2 node kill /listener
-
 cat /tmp/mypkg.log
 
 if [ $listener_exit_code -eq 0 ]; then
