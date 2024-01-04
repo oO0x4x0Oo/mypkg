@@ -4,12 +4,6 @@
 
 ![test](https://github.com/oO0x4x0Oo/mypkg/actions/workflows/test.yml/badge.svg)
 
-# インストール
-```
-$ git clone https://github.com/oO0x4x0Oo/mypkg
-$ colcon build
-```
-
 ## talker.py
 
 トークノードは、サービスサーバーを作成し、「name」に対する年齢情報を提供します。
@@ -62,7 +56,7 @@ Python
 ROS2 Foxy Fitzroy
 
 # テスト環境
-Ubuntu 20.04 on Windows
+Ubuntu 22.04 on Windows
 
 テストの際に以下のコンテナを使用しています
 * [ryuichiueda/ubuntu22.04-ros2](https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2)
