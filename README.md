@@ -1,20 +1,20 @@
 # mypkg
 
-このROS2パッケージは、簡単なトーク・リスンノードの例を提供します。トークノードは名前に対して特定の年齢を返し、リスンノードはサービスを呼び出してその年齢を受け取ります。
+このROS2パッケージは、簡単なtalker, listenerの例です。talkerは名前に対して特定の年齢を発信し、listenerはその年齢を受け取ります。
 
 ![test](https://github.com/oO0x4x0Oo/mypkg/actions/workflows/test.yml/badge.svg)
 
 ## talker.py
 
-トークノードは、サービスサーバーを作成し、「name」に対する年齢情報を提供します。
+talkerは、「name」に対する年齢情報を発信します。
 
 ## listener.py
 
-リスンノードは、サービスクライアントを作成し、トークノードに対してサービスを呼び出して年齢情報を取得します。
+listenerは、talkerを呼び出して年齢情報を取得します。
 
 ## talk_listen.launch.py
 
-トークノードとリスンノードを同時に起動するためのlaunchファイルです。
+talkerとlistenerを同時に起動するためのlaunchファイルです。
 
 # 実行方法
 
