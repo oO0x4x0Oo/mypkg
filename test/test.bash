@@ -13,4 +13,4 @@ source $dir/.bashrc
 timeout 2 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
 
 cat /tmp/mypkg.log |
-grep "age: 20"
+grep 'process has finished cleanly'
