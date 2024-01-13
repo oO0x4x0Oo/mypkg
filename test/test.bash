@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2023 Toshito Kimura
 # SPDX-License-Identifire: BSD-3-Clause
 
+
 dir=~
 [ "$1" != "" ] && dir="$1"
 
@@ -10,7 +11,20 @@ colcon build
 
 source $dir/.bashrc
 
-timeout 2 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
+timeout 5 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
+
+ng () {
+    echo "NG at Line $1"
+    res=1
+}
+
+res=0
 
 cat /tmp/mypkg.log |
-grep 'process has finished cleanly'
+grep "age: 20"
+
+[ "$?" = 0 ] || ng $LINENO    
+
+[ "$res" = 0 ] && echo "OK"
+exit $res
+
