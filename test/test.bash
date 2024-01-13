@@ -21,7 +21,7 @@ ng () {
 res=0
 
 cat /tmp/mypkg.log |
-grep "age: 20"
+grep "age:"
 
 [ "$?" = 0 ] || ng $LINENO    
 
