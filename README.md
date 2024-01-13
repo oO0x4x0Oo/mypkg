@@ -51,17 +51,21 @@ $ ros2 launch mypkg talk_listen.launch.py
 ```
 
 # 必要なソフトウェア
+Ubuntu 20.04.5 LTS
+
 Python
 
 ROS2 Foxy Fitzroy
 
 # テスト環境
-Ubuntu 22.04 on Windows
+Ubuntu 20.04.5 LTS
+
+Ubuntu 22.04
 
 テストの際に以下のコンテナを使用しています
 * [ryuichiueda/ubuntu22.04-ros2](https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2)
 
-# 著作権について
+# 著作権・ライセンスについて
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 * このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て使用したものです．
      * [ryuichiueda/mypkg](https://github.com/ryuichiueda/mypkg)
